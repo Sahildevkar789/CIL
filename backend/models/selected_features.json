@@ -1,0 +1,10 @@
+[
+  "waiting_time",
+  "queue_length",
+  "average_speed",
+  "traffic_density_low",
+  "emergency_vehicle",
+  "traffic_density_high",
+  "current_signal_east",
+  "traffic_density_medium"
+]

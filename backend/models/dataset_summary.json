@@ -1,0 +1,51 @@
+{
+  "raw_total_records": 1010,
+  "clean_records": 978,
+  "clean_columns": 12,
+  "missing_values_handled": 25,
+  "duplicates_removed": 10,
+  "outliers_detected": 5,
+  "numerical_medians": {
+    "queue_length": 21.0,
+    "waiting_time": 39.0,
+    "average_speed": 30.0
+  },
+  "categorical_modes": {
+    "traffic_density": "high",
+    "emergency_vehicle": "no",
+    "current_signal": "east",
+    "action": "extend_green"
+  },
+  "scaling_means": {
+    "queue_length": 27.922290388548056,
+    "waiting_time": 51.40490797546012,
+    "average_speed": 28.164621676891617
+  },
+  "scaling_scales": {
+    "queue_length": 23.845963034365564,
+    "waiting_time": 44.96610466739155,
+    "average_speed": 14.046100547956108
+  },
+  "action_distribution": {
+    "extend_green": 462,
+    "maintain": 217,
+    "emergency_priority": 118,
+    "reduce_green": 102,
+    "switch_signal": 79
+  },
+  "traffic_density_distribution": {
+    "medium": 341,
+    "low": 321,
+    "high": 316
+  },
+  "current_signal_distribution": {
+    "north": 262,
+    "west": 242,
+    "south": 238,
+    "east": 236
+  },
+  "emergency_vehicle_distribution": {
+    "no": 859,
+    "yes": 119
+  }
+}

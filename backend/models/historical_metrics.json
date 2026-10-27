@@ -1,0 +1,275 @@
+{
+  "logistic_regression": {
+    "accuracy": 0.801,
+    "precision": 0.7497,
+    "recall": 0.801,
+    "f1": 0.7673
+  },
+  "decision_tree": {
+    "accuracy": 0.8622,
+    "precision": 0.8759,
+    "recall": 0.8622,
+    "f1": 0.8457
+  },
+  "random_forest": {
+    "accuracy": 0.8827,
+    "precision": 0.8916,
+    "recall": 0.8827,
+    "f1": 0.8807
+  },
+  "lstm": {
+    "accuracy": 0.7959,
+    "precision": 0.7512,
+    "recall": 0.7959,
+    "f1": 0.7656
+  },
+  "integrated_system": {
+    "accuracy": 0.8827,
+    "precision": 0.8916,
+    "recall": 0.8827,
+    "f1": 0.8807
+  },
+  "confusion_matrices": {
+    "random_forest": [
+      [
+        24,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        90,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        37,
+        2,
+        1
+      ],
+      [
+        0,
+        0,
+        8,
+        12,
+        0
+      ],
+      [
+        0,
+        0,
+        6,
+        0,
+        10
+      ]
+    ],
+    "lstm": [
+      [
+        24,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        90,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        34,
+        5,
+        0
+      ],
+      [
+        0,
+        0,
+        12,
+        8,
+        0
+      ],
+      [
+        0,
+        0,
+        16,
+        0,
+        0
+      ]
+    ],
+    "integrated_system": [
+      [
+        24,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        90,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        37,
+        2,
+        1
+      ],
+      [
+        0,
+        0,
+        8,
+        12,
+        0
+      ],
+      [
+        0,
+        0,
+        6,
+        0,
+        10
+      ]
+    ]
+  },
+  "target_classes": [
+    "emergency_priority",
+    "extend_green",
+    "maintain",
+    "reduce_green",
+    "switch_signal"
+  ],
+  "test_records_count": 196,
+  "system_validation": {
+    "test_records": 196,
+    "correct_decisions": 173,
+    "incorrect_decisions": 23,
+    "model_agreement_rate": 0.8622,
+    "low_confidence_lstm_rate": 0.3163,
+    "emergency_override_count": 25
+  },
+  "rf_feature_importance": [
+    {
+      "feature": "queue_length",
+      "importance": 0.24926179901102588
+    },
+    {
+      "feature": "waiting_time",
+      "importance": 0.24471888241227924
+    },
+    {
+      "feature": "emergency_vehicle",
+      "importance": 0.2136264513255686
+    },
+    {
+      "feature": "average_speed",
+      "importance": 0.19379355641718812
+    },
+    {
+      "feature": "current_signal_east",
+      "importance": 0.03879156975032953
+    },
+    {
+      "feature": "traffic_density_low",
+      "importance": 0.03302348956202749
+    },
+    {
+      "feature": "traffic_density_high",
+      "importance": 0.014540599853123832
+    },
+    {
+      "feature": "traffic_density_medium",
+      "importance": 0.012243651668457416
+    }
+  ],
+  "lstm_feature_importance": [
+    {
+      "feature": "emergency_vehicle",
+      "importance": 0.194898
+    },
+    {
+      "feature": "average_speed",
+      "importance": 0.077551
+    },
+    {
+      "feature": "waiting_time",
+      "importance": 0.061224
+    },
+    {
+      "feature": "queue_length",
+      "importance": 0.046939
+    },
+    {
+      "feature": "current_signal_east",
+      "importance": 0.02449
+    },
+    {
+      "feature": "traffic_density_medium",
+      "importance": 0.023469
+    },
+    {
+      "feature": "traffic_density_high",
+      "importance": 0.007143
+    },
+    {
+      "feature": "traffic_density_low",
+      "importance": 0.00102
+    }
+  ],
+  "mutual_information_scores": [
+    {
+      "feature": "waiting_time",
+      "score": 0.7384397140049401
+    },
+    {
+      "feature": "queue_length",
+      "score": 0.6985872752522688
+    },
+    {
+      "feature": "average_speed",
+      "score": 0.6864688474566616
+    },
+    {
+      "feature": "traffic_density_low",
+      "score": 0.3881517296021282
+    },
+    {
+      "feature": "emergency_vehicle",
+      "score": 0.32668445043096495
+    },
+    {
+      "feature": "traffic_density_high",
+      "score": 0.22765798452253438
+    },
+    {
+      "feature": "current_signal_east",
+      "score": 0.03916956186133591
+    },
+    {
+      "feature": "traffic_density_medium",
+      "score": 0.02303959522746979
+    },
+    {
+      "feature": "current_signal_west",
+      "score": 0.0030357924120982815
+    },
+    {
+      "feature": "current_signal_south",
+      "score": 0.0
+    },
+    {
+      "feature": "current_signal_north",
+      "score": 0.0
+    }
+  ]
+}

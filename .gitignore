@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+*.so
+.env
+.venv/
+venv/
+env/
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Model artifacts (large binary files — regenerate with export_artifacts.py)
+backend/models/*.joblib
+backend/models/*.keras
+backend/models/*.h5
+
+# Database (local predictions, not for repo)
+backend/*.db
+backend/*.sqlite3
+
+# Jupyter / Notebook checkpoints
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs / temp
+*.log
+*.tmp
+notebook_all_code*.txt
+outputs_summary.txt
+
+# Scratch scripts (generated during setup)
+inspect_nb.ps1
+dump_cells.ps1
+dump_all_code.ps1
+clean_txt.ps1
+list_task_headers.ps1
+find_runtimes.ps1
+check_reg.ps1
+install_python_standalone.ps1
+setup_node.ps1
+setup_python.ps1
+install_frontend.ps1
+
+# Keep model artifacts metadata but not large binaries
+!backend/models/historical_metrics.json
+!backend/models/lstm_history.json
+!backend/models/dataset_summary.json
+!backend/models/selected_features.json
+
