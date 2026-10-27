@@ -53,7 +53,7 @@ cil/
 
 ### 1. Clone the Repository
 ```powershell
-git clone https://github.com/YOUR_USERNAME/smartflow-ai.git
+git clone https://github.com/Sahildevkar789/smartflow-ai.git
 cd smartflow-ai
 ```
 
